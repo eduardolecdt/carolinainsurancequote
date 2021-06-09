@@ -1,0 +1,127 @@
+/*
+
+INDEX > section.company
+
+*/
+
+section.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-white);
+  background-image: url('https://files.carolinainsurancequote.com/images/background-texture.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.company .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 150px 80px;
+}
+
+section.company .text h2 {
+  font-family: var(--font-light);
+  font-size: 3.5rem;
+  color: var(--color-blue-dark);
+}
+
+section.company .text h2 span {
+  color: var(--color-blue-light);
+}
+
+section.company .text p {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray-1);
+  padding: 20px 0;
+}
+
+section.company .text button {
+  font-family: var(--font-medium);
+  font-size: 1.1rem;
+  color: var(--color-white);
+  background-color: var(--color-blue-light);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+section.company .text button:hover {
+  background-color: var(--color-blue-dark);
+}
+
+section.company .text button span {
+  color: var(--color-blue-dark);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+section.company .text button:hover span {
+  color: var(--color-blue-light);
+}
+
+section.company .image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 50%;
+  padding: 0 80px;
+}
+
+section.company .image div {
+  background-color: var(--color-blue-light);
+  width: 300px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+section.company .image img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 80%;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.company {
+    flex-direction: column-reverse;
+  }
+  section.company .text {
+    width: 100%;
+    padding: 80px 20px 80px 20px;
+  }
+  section.company .text h1 {
+    font-size: 2.5rem;
+  }
+  section.company .text p {
+    font-size: 1rem;
+  }
+  section.company .text button {
+    font-size: 1rem;
+  }
+  section.company .image {
+    width: 100%;
+    padding: 0 20px;
+  }
+  section.company .image div {
+    width: 200px;
+    min-height: 350px;
+  }
+  section.company .image img {
+    top: 0;
+    transform: translate(0, 0);
+    max-width: 400px;
+  }
+}

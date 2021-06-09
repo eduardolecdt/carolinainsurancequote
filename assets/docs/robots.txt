@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://carolinainsurancequote.com/assets/docs/sitemap.xml

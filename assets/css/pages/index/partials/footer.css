@@ -1,0 +1,32 @@
+/*
+
+INDEX > FOOTER
+
+*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-blue-dark);
+  padding: 80px 20px;
+}
+
+footer p {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  footer p {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+  }
+}

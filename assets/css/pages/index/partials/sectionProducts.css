@@ -1,0 +1,208 @@
+/*
+
+INDEX > SECTION > products
+
+*/
+
+section.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-gray-2);
+}
+
+section.products .title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 80px 50px 80px;
+}
+
+section.products .title .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: auto;
+}
+
+section.products .title .text h2 {
+  font-family: var(--font-light);
+  font-size: 3.5rem;
+  color: var(--color-blue-dark);
+}
+
+section.products .title .text h2 span {
+  color: var(--color-blue-light);
+}
+
+section.products .title .text p {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray-1);
+}
+
+section.products .title .arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.products .title .arrows button {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 50px;
+  transition: all 0.3s;
+}
+
+section.products .title .arrows button:hover {
+  opacity: 0.6;
+}
+
+section.products .title .arrows button img {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+  pointer-events: none;
+}
+
+section.products .slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  scrollbar-width: none;
+  padding: 0 0 80px 0;
+}
+
+section.products .slide::-webkit-scrollbar {
+  display: none;
+}
+
+section.products .slide .items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 80px;
+  transition: all 0.3s;
+}
+
+section.products .slide .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  margin-right: 15px;
+  padding: 30px 0 0 0;
+}
+
+section.products .slide .items .item img.icon {
+  width: 150px;
+  margin: 0 auto;
+}
+
+section.products .slide .items .item h3 {
+  font-family: var(--font-medium);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--color-blue-light);
+  padding: 30px 20px 0 20px;
+}
+
+section.products .slide .items .item p {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray-1);
+  padding: 0 20px 30px 20px;
+}
+
+section.products .slide .items .item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-white);
+  border-top: 5px solid var(--color-gray-2);
+  border-radius: 0 0 15px 15px;
+  font-family: var(--font-medium);
+  font-size: 1rem;
+  color: var(--color-blue-light);
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+section.products .slide .items .item button:hover {
+  opacity: 0.6;
+}
+
+section.products .slide .items .item button img {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  pointer-events: none;
+  margin-left: auto;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.products .title {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 20px 40px 20px;
+  }
+  section.products .title .text h2 {
+    font-size: 2.5rem;
+  }
+  section.products .title .text p {
+    font-size: 1rem;
+  }
+  section.products .title .arrows {
+    padding: 30px 0 0 0;
+  }
+  section.products .title .arrows button {
+    width: 30px;
+    height: 30px;
+    margin: 0 30px 0 0;
+  }
+  section.products .title .arrows button img {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+  }
+  section.products .slide {
+    overflow: scroll;
+    padding: 0 0 60px 0;
+  }
+  section.products .slide .items {
+    padding: 0 20px;
+  }
+  section.products .slide .items .item {
+    margin-right: 10px;
+  }
+  section.products .slide .items .item img.icon {
+    width: 150px;
+    margin: 0 auto;
+  }
+  section.products .slide .items .item h3 {
+    font-size: 1.2rem;
+  }
+  section.products .slide .items .item p {
+    font-size: 1rem;
+  }
+}

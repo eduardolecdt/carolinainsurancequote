@@ -1,0 +1,127 @@
+/*
+
+INDEX > HEADER
+
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-white);
+  background-image: url('https://files.carolinainsurancequote.com/images/background-texture.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 150px 80px;
+}
+
+header .text h1 {
+  font-family: var(--font-light);
+  font-size: 3.5rem;
+  color: var(--color-blue-dark);
+}
+
+header .text h1 span {
+  color: var(--color-blue-light);
+}
+
+header .text p {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray-1);
+  padding: 20px 0;
+}
+
+header .text button {
+  font-family: var(--font-medium);
+  font-size: 1.1rem;
+  color: var(--color-white);
+  background-color: var(--color-blue-light);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+header .text button:hover {
+  background-color: var(--color-blue-dark);
+}
+
+header .text button span {
+  color: var(--color-blue-dark);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+header .text button:hover span {
+  color: var(--color-blue-light);
+}
+
+header .image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  width: 50%;
+  padding: 0 80px;
+}
+
+header .image div {
+  background-color: var(--color-blue-light);
+  width: 300px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+header .image img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+  header .text {
+    width: 100%;
+    padding: 120px 20px 80px 20px;
+  }
+  header .text h1 {
+    font-size: 2.5rem;
+  }
+  header .text p {
+    font-size: 1rem;
+  }
+  header .text button {
+    font-size: 1rem;
+  }
+  header .image {
+    width: 100%;
+    padding: 0 20px;
+  }
+  header .image div {
+    width: 200px;
+    min-height: 350px;
+  }
+  header .image img {
+    top: 0;
+    transform: translate(0, 0);
+    max-width: 400px;
+  }
+}

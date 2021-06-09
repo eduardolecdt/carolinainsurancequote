@@ -1,0 +1,202 @@
+/*
+
+INDEX > section.contact
+
+*/
+
+section.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-white);
+  background-image: url('https://files.carolinainsurancequote.com/images/background-texture.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.contact .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 80px 80px;
+}
+
+section.contact .form h2 {
+  font-family: var(--font-light);
+  font-size: 3.5rem;
+  color: var(--color-blue-dark);
+}
+
+section.contact .form h2 span {
+  color: var(--color-blue-light);
+}
+
+section.contact .form p {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray-1);
+  padding: 20px 0;
+}
+
+section.contact .form button.submit {
+  font-family: var(--font-medium);
+  font-size: 1.1rem;
+  color: var(--color-white);
+  background-color: var(--color-blue-light);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+section.contact .form button.submit:hover {
+  background-color: var(--color-blue-dark);
+}
+
+section.contact .form button.submit span {
+  color: var(--color-blue-dark);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+section.contact .form button.submit:hover span {
+  color: var(--color-blue-light);
+}
+
+section.contact .form div {
+  position: relative;
+  width: 100%;
+}
+
+section.contact .form div img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  pointer-events: none;
+}
+
+section.contact .form input {
+  font-family: var(--font-regular);
+  font-size: 1.1rem;
+  color: var(--color-gray-1);
+  background-color: var(--color-gray-2);
+  padding: 20px 20px 20px 50px;
+  border-radius: 15px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+section.contact .form input::placeholder {
+  opacity: 1;
+}
+
+section.contact .form input:focus {
+  color: var(--color-blue-light);
+}
+
+section.contact .form label {
+  font-family: var(--font-medium);
+  font-size: 0.9rem;
+  color: var(--color-gray-1);
+  padding: 25px 0 10px 0;
+}
+
+section.contact .form button.check {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: var(--font-medium);
+  font-size: 0.9rem;
+  color: var(--color-gray-1);
+  background-color: transparent;
+  width: 100%;
+  margin: 30px 0;
+  transition: all 0.3s;
+}
+
+section.contact .form button.check span {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  background-color: transparent;
+  border: 3px solid var(--color-gray-1);
+  margin: 0 10px 0 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+section.contact .form button.check.active {
+  color: var(--color-blue-light);
+}
+
+section.contact .form button.check.active span {
+  background-color: var(--color-blue-light);
+  border: 3px solid var(--color-blue-light);
+}
+
+section.contact .image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  width: 50%;
+  padding: 0 80px;
+}
+
+section.contact .image div {
+  background-color: var(--color-blue-light);
+  width: 300px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+section.contact .image img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.contact {
+    flex-direction: column;
+  }
+  section.contact .form {
+    width: 100%;
+    padding: 80px 20px 80px 20px;
+  }
+  section.contact .form h2 {
+    font-size: 2.5rem;
+  }
+  section.contact .form button {
+    font-size: 1rem;
+  }
+  section.contact .image {
+    width: 100%;
+    padding: 0 20px;
+  }
+  section.contact .image div {
+    width: 200px;
+    min-height: 350px;
+  }
+  section.contact .image img {
+    top: 0;
+    transform: translate(0, 0);
+    max-width: 400px;
+  }
+}

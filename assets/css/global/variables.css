@@ -1,0 +1,25 @@
+/*
+
+VARIABLES
+
+*/
+
+:root {
+
+  /* Colors */
+
+  --color-white: #FFFFFF;
+
+  --color-blue-dark: #002361;
+  --color-blue-light: #1DA7E0;
+
+  --color-gray-1: #929B9E;
+  --color-gray-2: #EAEEF5;
+
+  /* Fonts */
+
+  --font-light: 'clarikaGeometricLight';
+  --font-regular: 'clarikaGeometricRegular';
+  --font-medium: 'clarikaGeometricMedium';
+
+}
