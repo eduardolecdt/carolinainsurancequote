@@ -1,13 +1,6 @@
-# Projeto Carolina Insurance Quote
+1. Create the project folder on your computer
 
-Códigos criados por
-[@eduardolecdt](https://instagram.com/eduardolecdt)
-
-Clone o repositório em seu computador usando
-```sh
-git clone https://github.com/eduardolecdt/carolinainsurancequote.git
+2. Download the Project
 ```
-
-Páginas do Projeto
-
-> [Index do Projeto](https://eduardolecdt.github.io/carolinainsurancequote/)
+git clone https://gitlab.com/lecdt/jasonefland/website.git
+```
