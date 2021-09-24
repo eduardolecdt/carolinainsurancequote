@@ -1,6 +1,4 @@
-1. Create the project folder on your computer
+# Um projeto Lecdt LTDA
+> Carolina Insurance Quote
 
-2. Download the Project
-```
-git clone https://gitlab.com/lecdt/jasonefland/website.git
-```
+(Design by)[https://instagram.com/eduardolecdt]
