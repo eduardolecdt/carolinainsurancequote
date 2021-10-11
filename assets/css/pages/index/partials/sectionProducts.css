@@ -1,8 +1,4 @@
-/*
-
-INDEX > SECTION > products
-
-*/
+/* INDEX > SECTION > products */
 
 section.products {
   display: flex;
@@ -30,8 +26,8 @@ section.products .title .text {
 }
 
 section.products .title .text h2 {
-  font-family: var(--font-light);
-  font-size: 3.5rem;
+  font-family: var(--demibold);
+  font-size: clamp(2rem, 3vw, 3rem);
   color: var(--color-blue-dark);
 }
 
@@ -40,8 +36,8 @@ section.products .title .text h2 span {
 }
 
 section.products .title .text p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
 }
@@ -114,16 +110,16 @@ section.products .slide .items .item img.icon {
 }
 
 section.products .slide .items .item h3 {
-  font-family: var(--font-medium);
-  font-size: 1.3rem;
+  font-family: var(--demibold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-blue-light);
   padding: 30px 20px 0 20px;
 }
 
 section.products .slide .items .item p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
   padding: 0 20px 30px 20px;
@@ -137,8 +133,8 @@ section.products .slide .items .item button {
   background-color: var(--color-white);
   border-top: 5px solid var(--color-gray-2);
   border-radius: 0 0 15px 15px;
-  font-family: var(--font-medium);
-  font-size: 1rem;
+  font-family: var(--demibold);
+  font-size: clamp(0.8rem, 3vw, 1rem);
   color: var(--color-blue-light);
   padding: 20px;
   transition: all 0.3s;

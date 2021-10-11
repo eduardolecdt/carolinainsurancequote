@@ -1,8 +1,4 @@
-/*
-
-INDEX > section.company
-
-*/
+/* INDEX > COMPANY */
 
 section.company {
   display: flex;
@@ -10,7 +6,7 @@ section.company {
   justify-content: center;
   width: 100%;
   background-color: var(--color-white);
-  background-image: url('https://files.carolinainsurancequote.com/images/background-texture.png');
+  background-image: url('../../../../../files//images/background-textura.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,12 +18,12 @@ section.company .text {
   align-items: flex-start;
   justify-content: center;
   width: 50%;
-  padding: 150px 80px;
+  padding: 150px 150px 150px 80px;
 }
 
 section.company .text h2 {
-  font-family: var(--font-light);
-  font-size: 3.5rem;
+  font-family: var(--demibold);
+  font-size: clamp(2rem, 3vw, 3rem);
   color: var(--color-blue-dark);
 }
 
@@ -36,16 +32,16 @@ section.company .text h2 span {
 }
 
 section.company .text p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
   padding: 20px 0;
 }
 
 section.company .text button {
-  font-family: var(--font-medium);
-  font-size: 1.1rem;
+  font-family: var(--demibold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-white);
   background-color: var(--color-blue-light);
   padding: 15px 20px;
@@ -74,29 +70,23 @@ section.company .image {
   position: relative;
   width: 50%;
   padding: 0 80px;
+  background-image: url('../../../../../files/images/south-florida.png');
+  background-size: cover;
+  background-position: center;
 }
 
 section.company .image div {
   background-color: var(--color-blue-light);
-  width: 300px;
+  width: 20px;
   height: 100%;
   min-height: 100vh;
-}
-
-section.company .image img {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 80%;
-  border-radius: 0 20px 20px 0;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
   section.company {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   section.company .text {
     width: 100%;
@@ -116,12 +106,6 @@ section.company .image img {
     padding: 0 20px;
   }
   section.company .image div {
-    width: 200px;
     min-height: 350px;
-  }
-  section.company .image img {
-    top: 0;
-    transform: translate(0, 0);
-    max-width: 400px;
   }
 }

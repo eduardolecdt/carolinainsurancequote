@@ -1,29 +1,25 @@
-/*
-
-FONTS
-
-*/
+/* FONTS */
 
 @font-face {
-  font-family: 'clarikaGeometricLight';
+  font-family: 'clarikaBold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://files.carolinainsurancequote.com/fonts/clarika-geometric-light.woff') format('woff');
+  src: url('../../../files/fonts/clarika-bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'clarikaGeometricRegular';
+  font-family: 'clarikaDemibold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://files.carolinainsurancequote.com/fonts/clarika-geometric-regular.woff') format('woff');
+  src: url('../../../files/fonts/clarika-demibold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'clarikaGeometricMedium';
+  font-family: 'clarikaLight';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://files.carolinainsurancequote.com/fonts/clarika-geometric-medium.woff') format('woff');
+  src: url('../../../files/fonts/clarika-light.woff') format('woff');
 }

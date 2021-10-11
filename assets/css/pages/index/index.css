@@ -1,23 +1,13 @@
-/*
-
-INDEX
-
-*/
+/* INDEX */
 
 @import '../../global/global.css';
-
-/* Elements */
-
-@import '../../elements/nav.css';
 
 /* Partials */
 
 @import './partials/header.css';
-
 @import './partials/sectionCompany.css';
 @import './partials/sectionContact.css';
 @import './partials/sectionProducts.css';
 @import './partials/sectionTestimonials.css';
 @import './partials/sectionAbout.css';
-
 @import './partials/footer.css';

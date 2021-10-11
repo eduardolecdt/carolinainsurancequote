@@ -1,10 +1,7 @@
-/*
-
-GLOBAL
-
-*/
+/* GLOBAL */
 
 @import './fonts.css';
 @import './normalize.css';
 @import './scrollbar.css';
 @import './variables.css';
+@import './nav.css';

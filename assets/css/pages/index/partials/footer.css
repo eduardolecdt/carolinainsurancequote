@@ -1,8 +1,4 @@
-/*
-
-INDEX > FOOTER
-
-*/
+/* INDEX > FOOTER */
 
 footer {
   display: flex;
@@ -14,8 +10,8 @@ footer {
 }
 
 footer p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-white);
   text-align: center;

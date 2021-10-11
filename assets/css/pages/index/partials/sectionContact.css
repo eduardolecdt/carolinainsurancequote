@@ -1,8 +1,4 @@
-/*
-
-INDEX > section.contact
-
-*/
+/* INDEX > section.contact */
 
 section.contact {
   display: flex;
@@ -10,7 +6,7 @@ section.contact {
   justify-content: center;
   width: 100%;
   background-color: var(--color-white);
-  background-image: url('https://files.carolinainsurancequote.com/images/background-texture.png');
+  background-image: url('../../../../../files/images/background-textura.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,8 +22,8 @@ section.contact .form {
 }
 
 section.contact .form h2 {
-  font-family: var(--font-light);
-  font-size: 3.5rem;
+  font-family: var(--demibold);
+  font-size: clamp(2rem, 3vw, 3rem);
   color: var(--color-blue-dark);
 }
 
@@ -36,16 +32,16 @@ section.contact .form h2 span {
 }
 
 section.contact .form p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
   padding: 20px 0;
 }
 
 section.contact .form button.submit {
-  font-family: var(--font-medium);
-  font-size: 1.1rem;
+  font-family: var(--demibold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-white);
   background-color: var(--color-blue-light);
   padding: 15px 20px;
@@ -85,8 +81,8 @@ section.contact .form div img {
 }
 
 section.contact .form input {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--demibold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-gray-1);
   background-color: var(--color-gray-2);
   padding: 20px 20px 20px 50px;
@@ -97,15 +93,17 @@ section.contact .form input {
 
 section.contact .form input::placeholder {
   opacity: 1;
+  font-family: var(--light);
 }
 
 section.contact .form input:focus {
   color: var(--color-blue-light);
+  font-family: var(--demibold);
 }
 
 section.contact .form label {
-  font-family: var(--font-medium);
-  font-size: 0.9rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-gray-1);
   padding: 25px 0 10px 0;
 }
@@ -115,8 +113,8 @@ section.contact .form button.check {
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  font-family: var(--font-medium);
-  font-size: 0.9rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-gray-1);
   background-color: transparent;
   width: 100%;
@@ -152,22 +150,16 @@ section.contact .image {
   position: relative;
   width: 50%;
   padding: 0 80px;
+  background-image: url('../../../../../files/images/image-contact.png');
+  background-size: cover;
+  background-position: center;
 }
 
 section.contact .image div {
   background-color: var(--color-blue-light);
-  width: 300px;
+  width: 20px;
   height: 100%;
   min-height: 100vh;
-}
-
-section.contact .image img {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 80%;
-  border-radius: 20px 0 0 20px;
 }
 
 /* Responsivo */
@@ -191,7 +183,6 @@ section.contact .image img {
     padding: 0 20px;
   }
   section.contact .image div {
-    width: 200px;
     min-height: 350px;
   }
   section.contact .image img {

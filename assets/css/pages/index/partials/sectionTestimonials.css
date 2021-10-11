@@ -1,8 +1,4 @@
-/*
-
-INDEX > SECTION > testimonials
-
-*/
+/* INDEX > SECTION > testimonials */
 
 section.testimonials {
   display: flex;
@@ -24,8 +20,8 @@ section.testimonials .phrase {
 }
 
 section.testimonials .phrase p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-white);
 }
@@ -44,8 +40,8 @@ section.testimonials .part {
 }
 
 section.testimonials .part .title h2 {
-  font-family: var(--font-light);
-  font-size: 3.5rem;
+  font-family: var(--demibold);
+  font-size: clamp(2rem, 3vw, 3rem);
   color: var(--color-blue-dark);
 }
 
@@ -54,8 +50,8 @@ section.testimonials .part .title h2 span {
 }
 
 section.testimonials .part .title p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
 }
@@ -74,8 +70,8 @@ section.testimonials .part .testimonial.noSpace {
 }
 
 section.testimonials .part .testimonial p {
-  font-family: var(--font-regular);
-  font-size: 1.1rem;
+  font-family: var(--light);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
   background-color: var(--color-white);
@@ -122,8 +118,8 @@ section.testimonials .part .testimonial .client div {
 }
 
 section.testimonials .part .testimonial .client div h3 {
-  font-family: var(--font-medium);
-  font-size: 1.1rem;
+  font-family: var(--demibold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-gray-1);
   width: 100%;
   padding: 0 0 5px 0;
