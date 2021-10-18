@@ -2,6 +2,7 @@
 
   // Variables
 
+  const body = document.querySelector('body')
   const nav = document.querySelector('nav')
   const buttonMenu = nav.querySelector('button[name="openMenu"]')
   const optionsNav = nav.querySelector('div[name="options"]')
@@ -14,8 +15,10 @@
     buttonMenu.addEventListener('click', () => {
 
       const menuOpened = optionsNav.classList.contains('show')
-      if (menuOpened) optionsNav.classList.remove('show')
-      else optionsNav.classList.add('show')
+      if (menuOpened) optionsNav.classList.remove('show'), 
+      body.classList.remove('block')
+      else optionsNav.classList.add('show'), 
+      body.classList.add('block')
 
       const buttonMenuClicked = optionsNav.classList.contains('show')
       if (buttonMenuClicked) buttonMenu.classList.add('opened')

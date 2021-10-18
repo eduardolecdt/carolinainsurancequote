@@ -52,7 +52,7 @@ nav .options {
 nav .options button {
   font-family: var(--demibold);
   font-size: clamp(0.8rem, 3vw, 1rem);
-  color: var(--color-white);
+  color: var(--color-blue-light);
   background-color: transparent;
   margin: 0 0 0 30px;
   transition: all 0.3s;
@@ -63,7 +63,7 @@ nav .options button:hover {
 }
 
 nav .options button span {
-  color: var(--color-blue-light);
+  color: var(--color-white);
   pointer-events: none;
 }
 
@@ -77,9 +77,11 @@ nav .options .products {
   flex-wrap: wrap;
   padding: 20px;
   border-radius: 15px;
-  background-color: var(--color-blue-dark);
+  background-color: var(--color-white);
+  box-shadow: -10px 10px 30px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 350px;
+  max-width: 550px;
+  min-width: 550px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -103,13 +105,8 @@ nav .options .products button {
 
 nav .options .products button img {
   pointer-events: none;
-  width: 30px;
+  width: 50px;
   margin: 0 10px 0 0;
-  opacity: 0.2;
-}
-
-nav .options .products button:nth-child(odd) {
-  color: var(--color-blue-light);
 }
 
 /* media queryes */
@@ -118,20 +115,28 @@ nav .options .products button:nth-child(odd) {
   nav {
     padding: 0 20px;
   }
+  nav img.logo {
+    max-width: 160px;
+  }
   nav .options {
     position: fixed;
-    top: 80px;
-    right: 20px;
-    background-color: var(--color-blue-dark);
+    top: 70px;
+    right: 0;
+    background-color: var(--color-white);
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 30px 0 30px;
-    min-width: 200px;
+    justify-content: flex-start;
+    padding: 20px 20px 200px 20px;
+    min-width: 100%;
     border-radius: 15px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: all 0.3s;
+    overflow-y: scroll;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
   }
   nav .options.show {
     opacity: 1;
@@ -144,7 +149,32 @@ nav .options .products button:nth-child(odd) {
   nav button.openMenu {
     display: flex;
   }
-  nav .options button.ocultMobile {
+  nav .options .products {
+    position: initial;
+    top: 0;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    max-width: auto;
+    min-width: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: scale(1);
+  }
+  nav .options .products button {
+    margin: 5px 0;
+  }
+  nav .options .products button img {
+    width: 40px;
+  }
+  nav button.ocultMobile {
     display: none;
+  }
+  nav .options button span {
+    color: var(--color-blue-dark);
   }
 }
