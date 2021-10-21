@@ -4,6 +4,7 @@
 
 /* Partials */
 
+@import './partials/sectionPhone.css';
 @import './partials/header.css';
 @import './partials/sectionCompany.css';
 @import './partials/sectionContact.css';
