@@ -36,7 +36,11 @@ section.contact .form p {
   font-size: clamp(1rem, 3vw, 1.2rem);
   line-height: 1.6;
   color: var(--color-gray-1);
-  padding: 20px 0;
+  padding: 10px 0;
+}
+section.contact .form p a {
+  font-family: var(--demibold);
+  color: var(--color-blue-light);
 }
 
 section.contact .form button.submit {
@@ -152,14 +156,14 @@ section.contact .image {
   padding: 0 80px;
   background-image: url('../../../../../files/images/image-contact.png');
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 
 section.contact .image div {
   background-color: var(--color-blue-light);
   width: 20px;
   height: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 /* Responsivo */
